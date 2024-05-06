@@ -49,6 +49,7 @@ class _HomePageState extends State<HomePage>{
     		child: Padding(
     			padding: EdgeInsets.only(left: 25.0),
     			child: Column(
+
     			children: [
 
     			DrawerHeader(
@@ -59,8 +60,9 @@ class _HomePageState extends State<HomePage>{
     					),//icon
     				), //DrawerHeader
 
-    			
-    			ListTile(
+    			Padding(
+    				padding: EdgeInsets.only(left: 25.0),
+    			child: ListTile(
     				leading: Icon(Icons.home, color: Colors.pink),
     				title: Text("H O M E",
     					style: TextStyle(
@@ -69,23 +71,15 @@ class _HomePageState extends State<HomePage>{
     					),
     				onTap: () {
     					Navigator.pop(context);
-    					Navigator.pushNamed(context, '/firstpage');
+    					Navigator.pushNamed(context, '/ecommerce');
     					},
     				), //listile
+    			), //padding
 
-    			ListTile(
-    				leading: Icon(Icons.home, color: Colors.pink),
-    				title: Text("S H O P",
-    					style: TextStyle(
-    						color: Colors.pink,
-    						), // styletext
-    					),
-    				onTap: () {
-    					Navigator.pop(context);
-    					Navigator.pushNamed(context, '/firstpage');
-    					},
-    				), //listile
-    			ListTile(
+    			
+    			Padding(
+    				padding: EdgeInsets.only(left: 25.0),
+    			child: ListTile(
     				leading: Icon(Icons.shopping_bag_rounded, color: Colors.pink),
     				title: Text("C A R T",
     					style: TextStyle(
@@ -97,6 +91,41 @@ class _HomePageState extends State<HomePage>{
     					Navigator.pushNamed(context, '/cartpage');
     					},
     				), //listile
+    			), //padding
+    			const Spacer(),
+
+    			Padding(
+    				padding: EdgeInsets.only(left: 25.0),
+    			child: ListTile(
+    				leading: Icon(Icons.shopping_bag_rounded, color: Colors.pink),
+    				title: Text("H O M E",
+    					style: TextStyle(
+    						color: Colors.pink,
+    						), // styletext
+    					),
+    				onTap: () {
+    					Navigator.pop(context);
+    					Navigator.pushNamed(context, '/b_homepage');
+    					},
+    				), //listile
+    			), //padding
+
+    			Padding(
+    				padding: EdgeInsets.only(left: 25.0),
+    			child: ListTile(
+    				leading: Icon(Icons.shopping_bag_rounded, color: Colors.pink),
+    				title: Text("T U T O R I A L S",
+    					style: TextStyle(
+    						color: Colors.pink,
+    						), // styletext
+    					),
+    				onTap: () {
+    					Navigator.pop(context);
+    					Navigator.pushNamed(context, '/tutorial_tab');
+    					},
+    				), //listile
+    			), //padding
+
     			], // children
     			)// column
     			), //padding
@@ -130,7 +159,7 @@ class _HomePageState extends State<HomePage>{
     					), //container
     				Padding(
     					padding: const EdgeInsets.symmetric(vertical: 22.0),
-    					child: Text('Everyone Rocks, Some More Than Others'),
+    					child: Text('Everyone Rocks, Some Just More Than Others.'),
     				), //padding
 
     				Padding(

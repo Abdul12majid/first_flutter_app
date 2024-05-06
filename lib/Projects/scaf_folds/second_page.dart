@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'first_page.dart';
 
 
 
@@ -12,45 +11,31 @@ class SecondPage extends StatelessWidget {
 
 
     return Scaffold(
-      appBar: AppBar( 
-        backgroundColor: Colors.blue,
+      backgroundColor: Colors.pink[100],
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.white),
+        centerTitle: true,
+        backgroundColor: Colors.pink,
         title: Text( 
-          'Second Page',
-          style: TextStyle(color: Colors.white), //style
+          'Scaffold with Background Color',
+          style: TextStyle(
+            color: Colors.white,
+            ), //TextStyle
           ), // text
         ), // appbar
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
 
-          //home
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-            ), //BottomNavigationItem
-
-          //SecondPage
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'SecondPage',
-            
-            ), //BottomNavigationItem
-
-        ]
-        ), //buttomNavigation
+             
       body: Center(
         child: ElevatedButton(
+          child: Text('Go to second page'),
+          onPressed: () {
 
-          child: Text('Go to first page'),
-          onPressed: (){
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => FirstPage(),
-                ), //material
-              ); // nav push
+            Navigator.pushNamed(context, '/secondpage');
           },
           ), //elebutton
         ) //center
       ); // Scaffold
   }
 }  
+
+

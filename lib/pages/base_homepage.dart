@@ -78,13 +78,13 @@ class BaseHomePage extends StatelessWidget {
 
 		      		child: ElevatedButton(
 						onPressed:() {
-							Navigator.pushNamed(context, '/firstpage');
+							Navigator.pushNamed(context, '/tutorial_tab');
 							},
 						style: ElevatedButton.styleFrom(
     					backgroundColor: Colors.blue,
 						), //style
 						child: Text(
-							"Click to Start",
+							"Start",
 							style: TextStyle(
 								fontWeight: FontWeight.bold,
 			        			fontSize: 30,

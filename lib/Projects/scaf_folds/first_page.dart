@@ -16,7 +16,7 @@ class FirstPage extends StatelessWidget {
         centerTitle: true,
     		backgroundColor: Colors.blue,
     		title: Text( 
-    			'First Page',
+    			'Blank Scaffold',
           style: TextStyle(
             color: Colors.white,
             ), //TextStyle
@@ -24,98 +24,52 @@ class FirstPage extends StatelessWidget {
     		), // appbar
 
     	drawer: Drawer(
-    		backgroundColor: Colors.white,
-    		child: Column(
-    			children: [
+          backgroundColor: Colors.white,
+            child: Padding(
+              padding: EdgeInsets.only(left: 25.0),
+              child: Column(
+              children: [
 
-    			DrawerHeader(
-    				child: Icon(
-    					Icons.favorite,
-    					color: Colors.blue,
-    					size:48
-    					),//icon
-    				), //DrawerHeader
-    			ListTile(
-    				leading: Icon(Icons.home),
-    				title: Text("H O M E",
-    					style: TextStyle(
-    						color: Colors.blue,
-    						), // styletext
-    					),
-    				onTap: () {
-    					Navigator.pop(context);
-    					Navigator.pushNamed(context, '/firstpage');
-    					},
-    				), //listile
-    			ListTile(
-    				leading: Icon(Icons.home),
-    				title: Text("F I R S T - P A G E",
-    					style: TextStyle(
-    						color: Colors.blue,
-    						), // styletext
-    					),
-    				onTap: () {
-    					Navigator.pop(context);
-    					Navigator.pushNamed(context, '/counterpage');
-    					},
-    				), //listile
-    			ListTile(
-    				leading: Icon(Icons.book),
-    				title: Text("S E C O N D - P A G E",
-    					style: TextStyle(
-    						color: Colors.blue,
-    						), // styletext
-    					),
-    				onTap: () {
-    					Navigator.pop(context);
-    					Navigator.pushNamed(context, '/secondpage');
-    					},
-    				), //listile
+              DrawerHeader(
+                child: Icon(
+                  Icons.favorite,
+                  color: Colors.blue,
+                  size:48
+                  ),//icon
+                ), //DrawerHeader
 
-    			ListTile(
-    				leading: Icon(Icons.book),
-    				title: Text("C O U N T E R - P A G E",
-    					style: TextStyle(
-    						color: Colors.blue,
-    						), // styletext
-    					),
-    				onTap: () {
-    					Navigator.pop(context);
-    					Navigator.pushNamed(context, '/counterpage');
-    					},
-    				), //listile
+              
+              ListTile(
+                leading: Icon(Icons.home, color: Colors.blue),
+                title: Text("H O M E",
+                  style: TextStyle(
+                    color: Colors.blue,
+                    ), // styletext
+                  ),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.pushNamed(context, '/b_homepage');
+                  },
+                ), //listile
 
-          ListTile(
-            leading: Icon(Icons.book),
-            title: Text("T o - D O - P A G E",
-              style: TextStyle(
-                color: Colors.blue,
-                ), // styletext
-              ),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.pushNamed(context, '/todopage');
-              },
-            ), //listile
+              ListTile(
+                leading: Icon(Icons.book, color: Colors.blue),
+                title: Text("T U T O R I A L S",
+                  style: TextStyle(
+                    color: Colors.blue,
+                    ), // styletext
+                  ),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.pushNamed(context, '/tutorial_tab');
+                  },
+                ), //listile
 
-          ListTile(
-            leading: Icon(Icons.book),
-            title: Text("E-C O M M E R C E - P A G E",
-              style: TextStyle(
-                color: Colors.blue,
-                ), // styletext
-              ),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.pushNamed(context, '/ecommerce');
-              },
-            ), //listile
-
-
-    			], // children
-    			)// column
-    		), //drawer
-
+              
+              ], // children
+              )// column
+            ), //padding
+        ), //drawer
 
     	body: Center(
     		child: ElevatedButton(

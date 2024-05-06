@@ -4,7 +4,9 @@ import 'package:first_app/projects/scaf_folds/first_page.dart';
 import 'package:first_app/projects/scaf_folds/second_page.dart';
 
 import 'package:first_app/projects/counter/counter_page.dart';
+
 import 'package:first_app/pages/base_homepage.dart';
+import 'package:first_app/pages/tutorial_tab.dart';
 
 import 'package:first_app/projects/to_do/todo_page.dart';
 import 'package:hive/hive.dart';
@@ -51,6 +53,7 @@ class MyApp extends StatelessWidget {
         '/e_homepage': (context) => HomePage(),
         '/cartpage': (context) => CartPage(),
         '/b_homepage': (context) => BaseHomePage(),
+        '/tutorial_tab': (context) => TutorialTabPage(),
         },
       ) // MaterialApp
       ); //ChangedNotifierProvider
