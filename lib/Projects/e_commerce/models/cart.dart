@@ -1,4 +1,4 @@
-import 'package:first_app/e_commerce/models/shirt.dart';
+import 'shirt.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 

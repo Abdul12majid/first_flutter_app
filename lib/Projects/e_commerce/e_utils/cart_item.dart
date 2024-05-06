@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/e_commerce/models/shirt.dart';
+import '../models/shirt.dart';
 import 'package:provider/provider.dart';
-import 'package:first_app/e_commerce/models/cart.dart';
+import '../models/cart.dart';
 
 class CartItem extends StatefulWidget {
 	Shirt shirt;

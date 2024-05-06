@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/e_commerce/e_utils/shirt_tile.dart';
-import 'package:first_app/e_commerce/models/shirt.dart';
-import 'package:first_app/e_commerce/models/cart.dart';
+import 'e_utils/shirt_tile.dart';
+import 'models/shirt.dart';
+import 'models/cart.dart';
 import 'package:provider/provider.dart';
-import 'package:first_app/e_commerce/e_utils/cart_item.dart';
+import 'e_utils/cart_item.dart';
 
 class CartPage extends StatelessWidget {
 	const CartPage({super.key});

@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
-import 'package:first_app/pages/first_page.dart';
-import 'package:first_app/pages/second_page.dart';
-import 'package:first_app/pages/counter_page.dart';
+import 'package:first_app/projects/scaf_folds/first_page.dart';
+import 'package:first_app/projects/scaf_folds/second_page.dart';
+
+import 'package:first_app/projects/counter/counter_page.dart';
 import 'package:first_app/pages/base_homepage.dart';
 
-import 'package:first_app/pages/todo_page.dart';
+import 'package:first_app/projects/to_do/todo_page.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import 'package:first_app/e_commerce/intro_page.dart';
-import 'package:first_app/e_commerce/e_homepage.dart';
-import 'package:first_app/e_commerce/cart_page.dart';
-import 'package:first_app/e_commerce/models/cart.dart';
+import 'package:first_app/projects/e_commerce/intro_page.dart';
+import 'package:first_app/projects/e_commerce/e_homepage.dart';
+import 'package:first_app/projects/e_commerce/cart_page.dart';
+import 'package:first_app/projects/e_commerce/models/cart.dart';
 
 import 'package:provider/provider.dart';
 

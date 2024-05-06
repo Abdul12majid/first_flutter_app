@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/pages/first_page.dart';
-import '../util/todo_tile.dart';
-import '../util/dialog_box.dart';
+import 'package:first_app/projects/scaf_folds/first_page.dart';
+import 'utils/todo_tile.dart';
+import 'utils/dialog_box.dart';
 import 'package:first_app/data/database.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
